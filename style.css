@@ -1,0 +1,1198 @@
+@font-face {
+    font-family: ALS Hauss;
+    src: url('fonts/ALS_Hauss_Medium_2.1') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Navigo;
+    src: url('fonts/Navigo-Regular-Web.eot');
+    src: url('fonts/Navigo-Regular-Desktop') format('embedded-opentype'),
+    url('fonts/Navigo-Regular-Web.woff2') format('woff2'),
+    url('fonts/Navigo-Regular-Web.woff') format('woff'),
+    url('fonts/Navigo-Regular-Web') format('truetype'),
+    url('fonts/Navigo-Regular-Web') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Navigo Bold';
+    src: url('fonts/Navigo-Bold-Web.eot');
+    src: url('fonts/Navigo-Bold-Web.eot#iefix') format('embedded-opentype'),
+    url('fonts/Navigo-Bold-Web.woff2') format('woff2'),
+    url('fonts/Navigo-Bold-Web.woff') format('woff'),
+    url('fonts/Navigo-Bold-Web.ttf') format('truetype'),
+    url('fonts/Navigo-Bold-Web.svg#Navigo Bold') format('svg');
+
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/*Обнуление стилей*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,
+ol,
+li{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body{
+    height: 100%;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+/*---------------------------------------------------------------*/
+
+.wrapper{
+    min-height: 100%;
+    max-width:1400px;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex: 1 1 auto;
+
+}
+
+    /*----------------header-------------------------- */
+.header{
+    top: 0;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    background: #FFFFFF;
+    max-width:1400px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_container_left{
+    display: flex;
+    margin-left: 22px
+}
+.header__logo_img{
+    width: 172px;
+    height: 36px;
+
+}
+.header__logoVisa{
+    margin-left: 35px
+}
+.header__logoVisa_img{
+    width: 87px;
+    height: 28px;
+}
+
+.header_container_left span{
+    border-right: 1px solid #E1E1E3;
+    margin-left: 65px;
+}
+
+.header_container_right{
+    display: flex;
+    margin-right: 22px;
+}
+.header__tel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.header__tel__num{
+    font-family: ALS Hauss;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #2B2D33;
+
+}
+.header__tel_text{
+    font-family: ALS Hauss;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #808185;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+.header__tel_device{
+    display: none;
+}
+
+
+/*--------------------main--------------------------------*/
+
+.promo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: url("img/Promo_desk_1920x550.png") center/ cover no-repeat;
+    min-height: 550px;
+    padding-left: 130px;
+    padding-top: 80px;
+
+}
+
+
+.promo__sticker_img_mob{
+    display: none;
+}
+.promo__h1{
+    font-family: Navigo Bold;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-top: 23px;
+
+}
+.promo__h2{
+    font-family:Navigo Bold;
+    font-size: 108px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 70px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-top: 26px;
+
+
+}
+.promo_button{
+    width: 213px;
+    height: 53px;
+    background: #FEE600;
+    border-radius: 10px;
+    font-family: ALS Hauss;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #2B2D33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 53px;
+    cursor: pointer;
+}
+
+.promo_button:hover{
+    background: #FED500;
+}
+
+.promo_button_mob{
+    display: none;
+}
+
+.benefits{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 217px;
+
+}
+.benefits_block{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.benefits_block_h3{
+    font-family: Navigo Bold ;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 72px;
+    color: #2B2D33;
+}
+
+.benefits_block_h3_big{
+    font-family: Navigo Bold ;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 72px;
+    color: #2B2D33;
+
+}
+.benefits_block_h4{
+    font-family: ALS Hauss;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #808185;
+}
+
+.line{
+    height: 1px;
+    max-width:1400px;
+    background: #E1E1E3;
+}
+
+.cashback{
+    margin-top: 79px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cashback_h2{
+    font-family:  Navigo Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 54px;
+    color: #2B2D33;
+    text-align: center;
+
+}
+.cashback_blocks{
+    display: flex;
+    max-width: 1140px;
+    justify-content: space-between;
+    margin-top: 64px;
+
+}
+.cashback_block{
+    min-width: 364px;
+    min-height: 180px;
+    display: flex;
+    background: #29476B;
+    border-radius: 14px;
+    margin-right: 24px;
+}
+.cashback_block:last-child{
+    margin-right: 0px;
+}
+.cashback_block_h4{
+    font-family: ALS Hauss;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-left: 30px;
+    margin-top: 60px;
+
+}
+.cashback_block_img_1{
+    width: 160px;
+    height: 130px;
+    margin-left: 44px;
+    margin-top: 25px;
+}
+.cashback_block_img_2{
+    width: 131px;
+    height: 155px;
+    margin-left: 56px;
+
+}
+
+.cashback_block_img_3{
+    width: 133px;
+    height: 154px;
+    margin-left: 32px;
+
+}
+
+.cashback_block_img_3_mob{
+    display: none;
+}
+
+.calculate{
+    margin-top:90px;
+    background: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 90px;
+}
+.calculate_h2{
+    font-family: Navigo Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 54px;
+    text-align: center;
+    color: #2B2D33;
+    padding-top: 72px;
+
+}
+
+.calculate_h2_mob{
+    display: none;
+}
+.calculate_h3{
+    font-family: ALS Hauss;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #808185;
+    margin-top: 26px;
+
+}
+
+.calculate_h3_mob{
+    display: none;
+}
+.calculate_block{
+    background: #FFFFFF;
+    border-radius: 14px;
+    margin-top: 52px;
+    display: flex;
+    max-width: 1010px;
+    min-height: 274px;
+    padding: 47px 60px 60px 60px;
+}
+.line4_mob{
+    display: none;
+}
+
+.step1_2radio{
+    width: 100%;
+}
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background: #d3d3d3;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width:35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #FEE600;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #FEE600;
+    cursor: pointer;
+}
+
+.calculate_block_1{}
+.calculate_block_1_step1{}
+.step1_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.step1_1_h4{
+    font-family: ALS Hauss;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2B2D33;}
+.step1_1_h3{
+    font-family: Navigo;
+    font-size: 32px;
+    line-height: 30px;
+    color: #2B2D33;
+}
+.step1_2radio{}
+.step1_3{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 5px;
+    margin-bottom: 32px;
+}
+.step1_3_h4{
+    font-family: ALS Hauss;
+    font-size: 12px;
+    line-height: 12px;
+    color: #A2A4A6;
+
+}
+.calculate_block_1_step2{}
+.step1_2radio{}
+.calculate_block_1_step3{
+    margin-top: 58px;
+}
+.calculate_block_1_step3_h4{
+    font-family: ALS Hauss;
+    font-size: 13px;
+    line-height: 18px;
+    color: #A2A4A6;
+
+
+}
+.calculate_block_2_step3_h4_mob{
+    display: none;
+}
+
+.calculate_block_2{
+    margin-left: 56px;
+}
+.calculate_block_2_h3{
+    font-family: Navigo Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 42px;
+    color: #2B2D33;
+}
+.calculate_block_2_h4{
+    font-family: ALS Hauss;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2B2D33;
+    margin-bottom: 42px;
+}
+.calculate_block_2_button{
+    width: 204px;
+    height: 53px;
+    background: #FEE600;
+    border-radius: 10px;
+    font-family: ALS Hauss;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #2B2D33;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.calculate_block_2_button:hover{
+    background: #FED500;
+}
+
+.line2{
+    height: 270px;
+    width:1px;
+    background:#E1E1E3;
+    margin-left: 57px;
+}
+
+
+.form{
+    margin-top: 79px;
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form_h2{
+    font-family: Navigo Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 54px;
+    color: #2B2D33;
+    text-align: center;
+}
+.form_blocks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_block{
+    display: flex;
+    margin-right: 40px;
+    margin-top: 46px;
+}
+.form_block:last-child{
+    margin-right: 0px;
+}
+.form_block_img1{
+    width: 20px;
+    height: 24px;
+}
+.form_block_img2{
+    width: 22px;
+    height: 24px;
+}
+.form_block_img3{
+    width: 21px;
+    height: 20px;
+}
+.form_block_p{
+    font-family: ALS Hauss;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2B2D33;
+    margin-left: 14px;
+
+}
+
+
+.form_input{
+    background: #FFFFFF;
+    border: 1px solid #E1E1E3;
+    box-sizing: border-box;
+    border-radius: 12px;
+    display: flex;
+    margin-top: 42px;
+
+
+}
+.form_input_h4{
+    font-family: ALS Hauss;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #A2A4A6;
+    padding: 243px 337px 243px 337px;
+}
+
+
+.onlineBank{
+    background: #424548;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+.onlineBank_h2{
+    font-family: Navigo Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 54px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 79px;
+}
+.onlineBank_h4{
+    font-family: ALS Hauss;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 17px;
+
+
+}
+.onlineBank_blocks{
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.onlineBank_arrow,
+.onlineBank_arrow2{
+    width: 42px;
+    height: 42px;
+    background: #FEE600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.onlineBank_arrow{
+    margin-right: 30px;
+}
+.onlineBank_arrow2{
+    margin-left: 10px;
+}
+.onlineBank_arrow img{
+    width: 16.33px;
+    height: 16.33px;
+}
+.onlineBank_arrow2 img{
+    width: 16.33px;
+    height: 16.33px;
+    transform: rotate(180deg);
+}
+.onlineBank_block{
+    min-width: 234px;
+    min-height: 380px;
+    background: #2B2D33;
+    border-radius: 14px;
+    margin-right: 20px;
+}
+.onlineBank_block:last-child{
+    margin-right: 0;
+}
+.onlineBank_block img{
+    margin-top: 60px;
+    margin-left: 24px;
+    width: 186px;
+    height: 322px;
+}
+.onlineBank_button{
+    width: 265px;
+    height: 53px;
+    background: #FEE600;
+    border-radius: 10px;
+    font-family: ALS Hauss;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2B2D33;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    cursor: pointer;
+
+}
+
+.onlineBank_button:hover{
+    background: #FED500;
+}
+
+.slider_mob{
+    display: none;
+}
+
+.footer{
+    width: 100%;
+    background: #FFFFFF;
+    max-width:1400px;
+    margin-top: 90px;
+
+}
+
+.footer_part1{
+   display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 26px;
+    padding-left: 130px;
+    padding-right: 130px;
+
+
+}
+.footer_part1_h4{
+    font-family: ALS Hauss;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #55575C;
+}
+.footer_part2{
+    margin-top: 47px;
+    margin-left: 130px;
+    /*padding-right: 130px;*/
+    max-width: 1100px;
+
+
+
+}
+.footer_part2_p{
+    font-family: ALS Hauss;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #808185;
+    height: 122px;
+    padding-right: 35px;
+    cursor: pointer;
+
+}
+
+.simplebar-scrollbar:before {
+    height: 49px;
+    background: #808185;
+    border-radius: 4px;
+
+}
+.simplebar-track,
+.simplebar-vertical{
+    background: #E1E1E3;
+    border-radius: 4px;
+    max-width: 8px;
+}
+
+.help{
+    padding-top: 50px;
+}
+
+@media (max-width: 1140px){
+    .cashback_blocks{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cashback_block{
+        margin: 20px;
+    }
+    .onlineBank_blocks{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+
+    }
+    .onlineBank_arrow,
+    .onlineBank_arrow2{
+        display: none;
+    }
+    .onlineBank_block{
+        margin: 20px;
+    }
+    .form_input_h4{
+        padding: 100px 100px 100px 100px
+    }
+    .footer_part1{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .footer_part2{
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 790px){
+    .promo{
+        padding-left: 50px;
+    }
+    .benefits{
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+    .calculate_block{
+        flex-direction: column;
+        margin-top: 33px;
+        padding: 0px 16px 0px 16px;
+    }
+    .line2{
+        display: none;
+    }
+    .calculate_block_1{
+        margin-top: 30px;
+    }
+    .calculate_block_2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 0px
+
+    }
+    .form_blocks{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+@media (max-width: 600px){
+    .header_container_left span{
+        margin-left: 29px;
+    }
+    .header__logoVisa {
+        margin-left: 25px;
+    }
+    .header__tel_device{
+        display: block;
+    }
+    .header__tel{
+        display: none;
+    }
+
+    .promo__h1{
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: -0.2px;
+        margin-top: 19px
+    }
+    .promo__h2{
+        font-size: 64px;
+        line-height: 72px;
+        letter-spacing: -0.2px;
+    }
+    .benefits{
+        margin-top: 30px;
+    }
+    .footer_part1{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .footer_part2{
+        margin-left: 16px;
+    }
+    .footer_part2_p{
+        padding-right: 5px;
+    }
+
+}
+
+
+@media (max-width: 375px){
+    .header__tel_device{
+        display: block;
+    }
+    .header__tel_device_num{
+
+    }
+    .header__tel{
+        display: none;
+    }
+    .header__logo_img{
+        width: 133px;
+        height: 28px;
+    }
+    .header__logoVisa_img{
+        width: 75px;
+        height: 24px;
+    }
+    .header_container_left span{
+        margin-left: 29px;
+    }
+    .header__logoVisa {
+        margin-left: 25px;
+    }
+    .promo{
+        background: url("img/Promo_mob.png") center/ cover no-repeat;
+        min-height: 490px;
+        padding-left: 16px;
+        padding-top: 24px;
+    }
+    .promo__sticker_img_mob{
+        display: block;
+    }
+    .promo__sticker_img{
+        display: none;
+    }
+    .promo__h1{
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: -0.2px;
+        margin-top: 19px
+    }
+    .promo__h2{
+        font-size: 64px;
+        line-height: 72px;
+        letter-spacing: -0.2px;
+    }
+    .promo_button{
+        display: none;
+    }
+    .promo_button_mob{
+        display: flex;
+        width: 375px;
+        height: 54px;
+        background: #FEE600;
+        font-family: ALS Hauss;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #2B2D33;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-bottom: 45px;
+    }
+
+    .promo_button_mob:hover{
+        background: #FED500;
+    }
+
+    .block_mob{
+        display: none;
+     }
+    .benefits{
+        flex-direction: column;
+    }
+    .benefits_block_h3{
+        font-size: 48px;
+        line-height: 42px;
+    }
+    .benefits_block_h4{
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    .benefits_block_h3_big{
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .cashback_h2{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .cashback{
+        margin-top: 48px;
+    }
+    .cashback_blocks{
+        margin-top: 39px;
+        flex-direction: column;
+    }
+    .cashback_block{
+        margin-right: 0px;
+        min-width: 343px;
+        min-height: 140px;
+        margin-bottom: 14px;
+    }
+    .cashback_block_h4{
+       margin-top: 42px;
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .cashback_block_img_1{
+        width: 121px;
+        height: 100px;
+        margin-left: 80px;
+    }
+    .cashback_block_img_2{
+        width: 105px;
+        height: 124px;
+        margin-left: 70px;
+    }
+    .cashback_block_img_3_mob{
+        display: block;
+        width: 120px;
+        height: 106px;
+        margin-left: 18px;
+    }
+    .cashback_block_img_3{
+        display: none;
+    }
+
+    .calculate{
+        background: #FFFFFF;
+        margin-top: 0;
+        padding-bottom: 0px;
+    }
+    .calculate_h2_mob{
+        display: block;
+        font-size: 30px;
+        line-height: 36px;
+        padding-top: 52px;
+        font-family: Navigo Bold;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+        color: #2B2D33;
+    }
+    .calculate_h2{
+        display: none;
+
+    }
+    .calculate_h3_mob{
+        display: block;
+        font-family: ALS Hauss;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #808185;
+        margin-top: 15px;
+    }
+    .calculate_h3{
+        display: none;
+    }
+    .calculate_block{
+        flex-direction: column;
+        margin-top: 33px;
+        padding: 0px 16px 0px 16px;
+    }
+    .line2{
+        display: none;
+    }
+
+    .step1_1_h3{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .calculate_block_1_step3_h4{
+        display: none;
+    }
+
+    .calculate_block_2{
+        margin-left: 0;
+        background: #F4F4F4;
+        border-radius: 14px;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+
+    }
+    .calculate_block_2_h3{
+        margin-top: 20px;
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .calculate_block_2_h4{
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 6px;
+    }
+    .line4_mob{
+        display: flex;
+        width: 343px;
+        height: 1px;
+        background: #E1E1E3;
+        margin-top: 24px;
+
+    }
+
+    .calculate_block_2_step3_h4_mob{
+        display: block;
+        margin-top: 12px;
+        font-family: ALS Hauss;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #808185;
+        padding-bottom: 12px;
+
+    }
+
+    .form_h2{
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .form{
+        margin-top: 48px;
+        margin-bottom: 60px;
+    }
+    .form_blocks{
+        flex-direction: column;
+    }
+    .form_block{
+        margin-right: 0px;
+        margin-left: 0px;
+
+    }
+    .form2_mob{
+        margin-left: -15px;
+    }
+
+    .form_input{
+        background: #F4F4F4;
+        border-radius: 0;
+        border: none;
+    }
+    .form_input_h4{
+        padding: 212px 42px 212px 42px;
+    }
+    .onlineBank_h2{
+        font-size: 30px;
+        line-height: 36px;
+        padding-top: 53px;
+    }
+    .onlineBank_h4{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .onlineBank_button{
+        display: none;
+    }
+
+
+
+    .onlineBank_blocks{
+        display: none;
+    }
+
+    .slider_mob{
+        display: flex;
+        margin-top: 32px;
+    }
+    .slider_mob__item1{
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+
+    .footer{
+        margin-top:60px
+    }
+
+    .footer_part1{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 16px;
+        padding-right: 21px;
+        margin-bottom: 0px;
+    }
+
+    .footer_part1_h4{
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 20px;
+    }
+    .footer_part2{
+        margin-top: 28px;
+        margin-left: 16px;
+        margin-right: 16px;
+
+    }
+    .footer_part2_p{
+        padding-right: 5px;
+    }
+
+    .help{
+     padding-top: 26px;
+    }
+
+
+}
+
+
+

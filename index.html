@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header_container_left">
+            <a href="#" class="header__logo">
+                <img class="header__logo_img" src="img/Raiff_logo.png" alt="logo">
+            </a>
+            <span></span>
+            <div class="header__logoVisa">
+                <img class="header__logoVisa_img" src="img/Visa_Logo.png" alt="logoVisa">
+            </div>
+        </div>
+        <div class="header_container_right">
+            <div class="header__tel" >
+                <a class="header__tel__num" href="tel:8 800 770-75-62">8 800 770-75-62</a>
+                <p class="header__tel_text">Бесплатно по России</p>
+            </div>
+            <div class="header__tel_device">
+                <a class="header__tel_device_num" href="tel:8 800 770-75-62"><img src="img/contact.png" alt="tel"></a>
+            </div>
+
+        </div>
+    </header>
+    <main class="main">
+        <div class="promo">
+            <img class="promo__sticker_img" src="img/Sticker.png" alt="sticker">
+            <img class="promo__sticker_img_mob" src="img/Sticker_mob.png" alt="sticker">
+            <h1 class="promo__h1">Кредитная карта <br> с кэшбэком</h1>
+            <h2 class="promo__h2">1,5%</h2>
+            <button class="promo_button">Оформить онлайн</button>
+        </div>
+        <a class="promo_button_mob" href="#">Оформить онлайн</a>
+        <div class="benefits">
+            <div class="benefits_block">
+                <h3 class="benefits_block_h3">1,5%</h3>
+                <h4 class="benefits_block_h4">кэшбэк рублями</h4>
+            </div>
+            <div class="benefits_block">
+                <h3 class="benefits_block_h3">0₽</h3>
+                <h4 class="benefits_block_h4">обслуживание</h4>
+            </div>
+            <div class="benefits_block block_mob">
+                <h3 class="benefits_block_h3_big">до 52 дней</h3>
+                <h4 class="benefits_block_h4">без процентов</h4>
+            </div>
+            <div class="benefits_block">
+                <h3 class="benefits_block_h3_big">до 600 тыс. ₽</h3>
+                <h4 class="benefits_block_h4">кредитный лимит</h4>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="cashback">
+            <h2 class="cashback_h2">Кэшбэк 1,5% без ограничений</h2>
+            <div class="cashback_blocks">
+                <div class="cashback_block">
+                    <h4 class="cashback_block_h4">Кэшбэк <br>рублями</h4>
+                    <img class="cashback_block_img_1" src="img/Hue_Saturation%201%201.png" alt="block1">
+                </div>
+                <div class="cashback_block">
+                    <h4 class="cashback_block_h4">За любые<br>покупки</h4>
+                    <img class="cashback_block_img_2" src="img/bag%201.png" alt="block2">
+                </div>
+                <div class="cashback_block">
+                    <h4 class="cashback_block_h4">Без лимитов <br>и ограничений</h4>
+                    <img class="cashback_block_img_3" src="img/car%201.png" alt="block2">
+                    <img class="cashback_block_img_3_mob" src="img/carMob.png" alt="block2">
+                </div>
+            </div>
+        </div>
+        <div class="calculate">
+            <h2 class="calculate_h2">Возьмите дополнительный кредит</h2>
+            <h2 class="calculate_h2_mob">Дополнительный <br>
+                кредит на любые цели</h2>
+            <h3 class="calculate_h3">Кредит на любые цели. Получите решение за 2 минуты</h3>
+            <h3 class="calculate_h3_mob">Получите решение за 2 минуты</h3>
+            <div class="calculate_block">
+                <div class="calculate_block_1">
+                    <div class="calculate_block_1_step1">
+                        <div class="step1_1">
+                            <h4 class="step1_1_h4">Какая сумма нужна?</h4>
+                            <h3 class="step1_1_h3">500 000 ₽</h3>
+                        </div>
+                        <div class="step1_2radio">
+                            <input class="slider" type="range" min="1" max="100" value="50">
+                        </div>
+                        <div class="step1_3">
+                            <h4 class="step1_3_h4">90 000 ₽</h4>
+                            <h4 class="step1_3_h4">2 000 000 ₽</h4>
+                        </div>
+                    </div>
+                    <div class="calculate_block_1_step2">
+                        <div class="step1_1">
+                            <h4 class="step1_1_h4">На какой срок?</h4>
+                            <h3 class="step1_1_h3">36 мес.</h3>
+                        </div>
+                        <div class="step1_2radio">
+                            <input class="slider" type="range" min="1" max="100" value="50"  id="myRange">
+                        </div>
+                        <div class="step1_3">
+                            <h4 class="step1_3_h4">13 мес.</h4>
+                            <h4 class="step1_3_h4">60 мес.</h4>
+                        </div>
+
+                    </div>
+                    <div class="calculate_block_1_step3">
+                        <h4 class="calculate_block_1_step3_h4">Расчет платежа приведен с учетом финансовой защиты. Не является офертой.</h4>
+                    </div>
+                </div>
+                <div class="line2"></div>
+                <div class="calculate_block_2">
+                    <h3 class="calculate_block_2_h3">10,99%</h3>
+                    <h4 class="calculate_block_2_h4">ваша ставка</h4>
+                    <h3 class="calculate_block_2_h3">14 265 ₽</h3>
+                    <h4 class="calculate_block_2_h4">ежемесячный платёж</h4>
+                    <button class="calculate_block_2_button">Получить кредит</button>
+                    <div class="line4_mob"></div>
+                    <h4 class="calculate_block_2_step3_h4_mob">Расчет платежа приведен с учетом финансовой <br> защиты. Не является офертой.</h4>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="form">
+            <h2 class="form_h2">Оформите карту онлайн</h2>
+            <div class="form_blocks">
+                <div class="form_block">
+                    <img class="form_block_img1" src="img/doc.png" alt="form_img">
+                    <p class="form_block_p">Заполните онлайн-заявку. <br>Это займет не больше 5 минут</p>
+                </div>
+                <div class="form_block form2_mob">
+                    <img class="form_block_img2 " src="img/message.png" alt="form_img">
+                    <p class="form_block_p">Через 2 минуты придет смс <br>с решением</p>
+                </div>
+                <div class="form_block">
+                    <img class="form_block_img3" src="img/Vector.png" alt="form_img">
+                    <p class="form_block_p">Получите карту с бесплатной <br>доставкой или в отделении</p>
+                </div>
+            </div>
+            <div class="form_input">
+                <h4 class="form_input_h4">Форма заявки на кредитную карту</h4>
+            </div>
+        </div>
+        <div class="onlineBank">
+            <h2 class="onlineBank_h2">Удобный мобильный банк</h2>
+            <h4 class="onlineBank_h4">Пользуйтесь услугами онлайн без визита в отделение</h4>
+            <div class="onlineBank_blocks">
+                <div class="onlineBank_arrow"><img src="img/Vector_small.png" alt="vector"></div>
+                <div class="onlineBank_block"><img src="img/Phone_Screen1.png" alt="phone"></div>
+                <div class="onlineBank_block"><img src="img/Phone_Screen2.png" alt="phone"></div>
+                <div class="onlineBank_block"><img src="img/Phone_Screen3.png" alt="phone"></div>
+                <div class="onlineBank_block"><img src="img/Phone_Screen4.png" alt="phone"></div>
+                <div class="onlineBank_arrow2"><img src="img/Vector_small.png" alt="vector"></div>
+            </div>
+            <div class="slider_mob">
+                <div class="slider_mob__item1" ><img src="img/1.png" alt="phone"></div>
+                <div class="slider_mob__item2" ><img src="img/2.png" alt="phone"></div>
+
+            </div>
+
+            <button class="onlineBank_button">Оформить карту онлайн</button>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="line"></div>
+        <div class="footer_part1">
+            <h4 class="footer_part1_h4">© АО «Райффайзенбанк»</h4>
+            <h4 class="footer_part1_h4">Генеральная лицензия Банка России № 3292 от 17.02.2015. Юридический адрес: 129090, Москва, ул. Троицкая,
+                д. 17, стр. 1</h4>
+        </div>
+        <div class="line"></div>
+        <div class="footer_part2">
+            <p class="footer_part2_p" id="myElement">Кэшбэк – возврат средств. Кэшбэк начисляется на любые покупки, совершенные по карте VISA Кэшбэк на всё,
+                в размере 1,5 % от суммы расходной операции. Начисленный за календарный месяц кэшбэк выплачивается рубля
+                ми на счет клиента в течение 7 рабочих дней после окончания соответствующего календарного месяца. Кэшбэк
+                не начисляется за совершение некоторых видов операций согласно правилам программы, размещенным на сайте
+                raif.ru.
+                <br>
+                <br>
+                Сроки проведения акции «Бесплатная кредитная карта «Кэшбэк на всё» для существующих и новых клиентов АО
+                «Райффайзенбанк» — с 01.06.20 по 31.08.20. Информация об организаторе акции, о правилах ее проведения,
+                количестве призов или выигрышей по результатам такой акции, сроках, месте и порядке их получения
+                размещена на на raif.ru или по 8 800 770 09 08.
+                <br>
+                <br>
+                В течение льготного периода до 52 дней, проценты по кредиту не начисляются на безналичные операции при
+                условии своевременного внесения минимальных платежей и полного погашения задолженности последнего
+                отчетного периода.  Ставка 19-49% годовых определяется индивидуально по результатам оценки кредитоспособности
+                клиента и категории совершаемых клиентом операций по карте. Лимит кредита возобновляемый 15 000-600 000 руб.,
+                срок действия лимита не ограничен сроком действия кредитной карты. Кредитный договор действует до
+                момента исполнения сторонами своих обязательств. Комиссии: за процессинг по картам, подключенным к
+                программе лояльности: не взимается по акции/ вне акции 1490 руб. в год по основной карте, 500 рублей в год
+                по дополнительной карте; за выдачу наличных в банкоматах банка и банков-партнеров – 3% от суммы
+                снятия+300 руб/ в иных
+                банкоматах – 3,9 % + 300 руб.; за переводы на карты банка/на карты других банков — 3% от суммы
+                перевода+300 руб.; за квази-кэш-операции—3% от суммы операции + 300 руб.; за сервис «уведомление об операциях»
+                - 60 руб. по основной/45 руб. по дополнительной карте в мес.; за совершение операции за рубежом в валюте,
+                отличной от валюты счета — 1,65% от суммы операции; за внесение наличных денежных средств через кассу
+                банка — 100 руб. (при внесении до 10 000 руб.).Банк принимает решение о предоставлении кредита на основании
+                всей полученной информации и требований к заемщику. Действительно на 01.06.20. АО «Райффайзенбанк» 0+</p>
+        </div>
+        <div class="help"></div>
+
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
