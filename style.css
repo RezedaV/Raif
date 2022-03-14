@@ -1193,6 +1193,31 @@ body{
 
 
 }
+@media (max-width: 320px){
+    .promo_button_mob{
+        width: 320px;
+    }
+    .cashback_block{
+        margin-right: 0px;
+        margin-left: 0px;
+        min-width: 300px;
+    }
+    .calculate_block{
+        padding: 0 5px;
+    }
+    .calculate_block{
+        max-width: 320px;
+    }
+    .slider_mob__item2{
+        display: none;
+    }
+    .line4_mob{
+        width: 315px;
+    }
+    .cashback_block_img_1{
+        margin-left: 60px;
+    }
+}
 
 
 
